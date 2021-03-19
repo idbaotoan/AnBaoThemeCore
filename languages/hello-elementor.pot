@@ -1,0 +1,269 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: A &amp; B\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-16 06:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: functions/woocommerce/heplper.php:129
+msgid " Cuối cùng, xin quý khách vui lòng chọn: Phường hoặc Xã"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:128
+msgid " Tiếp theo, xin quý khách vui lòng chọn: Quận hoặc Huyện"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:127
+msgid " Đầu tiên, xin quý khách vui lòng chọn: Thành Phố hoặc Tỉnh"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:235
+msgid "<h3>Địa chỉ cửa hàng bạn đã chọn</h3>"
+msgstr ""
+
+#. Name of the theme
+msgid "A &amp; B"
+msgstr ""
+
+#: functions.php:56
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:65
+msgid "Blog Sidebar 2"
+msgstr ""
+
+#: functions/woocommerce/features.php:484
+msgid "BẢNG SO SÁNH"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:85
+msgid "Chọn"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:107
+msgid "Chọn Phường / Xã"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:104
+msgid "Chọn Quận / Huyện"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:98
+msgid "Chọn Thành Phố / Tỉnh"
+msgstr ""
+
+#: functions/woocommerce/features.php:530
+#: functions/woocommerce/features.php:667
+msgid "Giá"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://anbaowebdesign.com/"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:36
+msgid "Không có sản phẩm trong bảng so sánh."
+msgstr ""
+
+#: functions/woocommerce/hooks.php:22
+msgid "Không thêm được vào danh sách yêu thích."
+msgstr ""
+
+#: functions/theme/hooks.php:14
+msgid "kéo lên"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:35
+msgid "Lỗi, xin bạn vui lòng thử lại."
+msgstr ""
+
+#: functions/woocommerce/heplper.php:91
+msgid "Mã 7-11"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:153 functions/woocommerce/heplper.php:200
+#: functions/woocommerce/heplper.php:219 functions/woocommerce/heplper.php:224
+#: functions/woocommerce/heplper.php:239
+msgid "Mã 7-11:"
+msgstr ""
+
+#: functions/woocommerce/features.php:518
+msgid "Mã SP"
+msgstr ""
+
+#: functions/woocommerce/features.php:165
+#: functions/woocommerce/features.php:216
+#: functions/woocommerce/features.php:281
+msgid "Mã:"
+msgstr ""
+
+#: functions/woocommerce/features.php:538
+msgid "Mô tả"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:23
+msgid "Mục yêu thích trống."
+msgstr ""
+
+#. Author of the theme
+msgid "Nguyễn Bảo Toàn"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:79
+msgid "Nhận tại hệ thống 7-11"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:117
+msgid "Nhập mã cửa hàng"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:111
+msgid "Nhập tên cửa hàng"
+msgstr ""
+
+#: functions/woocommerce/features.php:455
+msgid "No products to compare."
+msgstr ""
+
+#. Name of the template
+msgid "Prebuild Page"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:126
+msgid "Quý khách vui lòng chọn cửa hàng gần nhất của chúng tôi."
+msgstr ""
+
+#: functions/woocommerce/features.php:721
+msgid "Remove"
+msgstr ""
+
+#. Name of the template
+msgid "Responsive Page"
+msgstr ""
+
+#: functions.php:74
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:83
+msgid "Shop Sidebar 2"
+msgstr ""
+
+#: functions.php:92
+msgid "Shop Sidebar 3"
+msgstr ""
+
+#: functions.php:101
+msgid "Shop Sidebar 4"
+msgstr ""
+
+#. Name of the template
+msgid "Store Page"
+msgstr ""
+
+#: functions/woocommerce/features.php:655
+msgid "SẢN PHẨM YÊU THÍCH"
+msgstr ""
+
+#: functions/woocommerce/features.php:664
+msgid "Sản Phẩm"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:31
+msgid "Thêm so sánh"
+msgstr ""
+
+#: functions/woocommerce/features.php:670
+msgid "Thêm Vào Giở"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:18
+msgid "Thêm yêu thích"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:164 functions/woocommerce/heplper.php:192
+msgid "Thông tin cửa hàng bạn chọn"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:113 functions/woocommerce/heplper.php:119
+msgid "Tra cứu"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:90
+msgid "Tên cửa hàng"
+msgstr ""
+
+#: functions/woocommerce/features.php:159
+#: functions/woocommerce/features.php:210
+#: functions/woocommerce/features.php:275
+msgid "Tên cửa hàng:"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:81
+msgid "Tìm cửa hàng"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:148 functions/woocommerce/heplper.php:154
+msgid "Tự động nhập"
+msgstr ""
+
+#: functions.php:58 functions.php:67 functions.php:76 functions.php:85
+#: functions.php:94 functions.php:103
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: functions/woocommerce/features.php:629
+msgid "Wishlist is empty."
+msgstr ""
+
+#: functions/woocommerce/hooks.php:33
+msgid "Xem so sánh"
+msgstr ""
+
+#: functions/woocommerce/hooks.php:20
+msgid "Xem xem thích"
+msgstr ""
+
+#: functions/woocommerce/features.php:494
+#: functions/woocommerce/features.php:673
+msgid "Xóa"
+msgstr ""
+
+#. Description of the theme
+msgid "Được phát triển với nhiều tính năng mới"
+msgstr ""
+
+#: functions/woocommerce/features.php:559
+msgid "Đặc điểm"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:89
+msgid "Địa chỉ"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:147 functions/woocommerce/heplper.php:218
+#: functions/woocommerce/heplper.php:223
+msgid "Địa chỉ cửa hàng"
+msgstr ""
+
+#: functions/woocommerce/heplper.php:196
+msgid "Địa chỉ cửa hàng:"
+msgstr ""
+
+#: functions/woocommerce/features.php:161
+#: functions/woocommerce/features.php:212
+#: functions/woocommerce/features.php:277
+msgid "Địa chỉ:"
+msgstr ""

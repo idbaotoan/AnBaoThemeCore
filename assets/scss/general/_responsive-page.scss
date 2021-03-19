@@ -1,0 +1,142 @@
+/*========= AB Responsive Demo ===========*/
+
+#top-sidebar-prebuild{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #000;
+	color: #fff;
+	padding: 15px 30px;
+	.back{
+		a{
+			color: #fff;
+		}
+		i{
+			margin-right: 5px;
+		}
+	}
+	
+	.responsive-devices{
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		li{
+			cursor: pointer;
+			list-style-type: none;
+			padding: 0 20px;
+			i{
+				font-size: 30px;
+
+			}
+			label{
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+#show-device{
+	width: 100%;
+	height: 100vh;
+	display: block;
+	background: #ccc;
+	padding: 30px 0;
+	&.mobile{
+		.device-inner{
+			height: 704px;
+			width: 372px;
+			margin: 0 auto;
+			display: block;
+			background: url(../images/mobile.svg);
+			background-repeat: no-repeat;
+			.inner-mash{
+				margin: 104px 0 95px 19px;
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+				width: auto;
+				display: inline-block;
+				iframe{
+					margin: 0 auto;
+					display: block;
+					border: none;
+					width: 335px;
+					height: 495px;	
+				}
+			}
+		}
+	}
+	&.tablet{
+		.device-inner{
+			height: 1242px;
+			width: 871px;
+			margin: 0 auto;
+			display: block;
+			background: url(../images/tablet.svg);
+			background-repeat: no-repeat;
+			.inner-mash{
+				margin: 106px 0 98px 44px;
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+				width: auto;
+				display: inline-block;
+				iframe{
+					margin: 0 auto;
+					display: block;
+					border: none;
+					width: 800px;
+					height: 1040px;
+				}
+			}
+		}
+	}
+	&.desktop{
+		padding: 0;
+		.device-inner{
+			.inner-mash{
+				iframe{
+					width: 100vw;
+					height: 100vh;
+					max-width: 100%;
+					padding: 0;
+					border: 0 none;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}
+
+// AB creenshot page
+
+#btnSave{
+	cursor: pointer;
+	i{
+		margin-right: 5px;
+	}
+	img{
+		display: none;
+		height: 30px;
+	}
+	&.loading{
+		img{
+			display: block;
+		}
+		.btn-inner{
+			display: none;
+		}
+	}
+}
+.output-notice{
+	background: #ccc;
+	color: #fff;
+	text-align: center;
+	i{
+		margin-left: 10px;
+	}
+}
+#output-image{
+	canvas{
+		width: 100%;
+	}
+}

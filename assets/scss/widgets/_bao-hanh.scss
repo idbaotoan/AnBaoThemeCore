@@ -1,0 +1,63 @@
+.bao-hanh{
+	.bao-hanh-inner{
+		.code{
+			margin-bottom: 20px;
+		}
+		.btn-bao-hanh{
+			background: #000;
+			color: #fff;
+			font-size: 0.8rem;
+			opacity: 0.8;
+			text-transform: uppercase;
+			font-weight: bold;
+			border: 0;
+			cursor: pointer;
+			height: 40px;
+			width: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			*{
+				pointer-events: none;
+			}
+			&:hover{
+				opacity: 1;
+			}
+			img{
+				display: none;
+				width: 20px;
+			}
+			&.loading{
+				img{
+					display: block;
+				}
+				label{
+					display: none;
+				}
+			}
+		}
+	}
+	.bao-hanh-append{
+		margin-top: 20px;
+		ul{
+			padding: 0;
+			margin: 0;
+			border: 1px solid #ebebeb;
+			li{
+				list-style-type: none;
+				color: #000;
+				font-size: 1rem;
+				padding: 10px 15px;
+				border-bottom: 1px solid #ebebeb; 
+				line-height: 1.2;
+				label{
+					font-weight: bold;
+					line-height: 1.5;
+				}
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}

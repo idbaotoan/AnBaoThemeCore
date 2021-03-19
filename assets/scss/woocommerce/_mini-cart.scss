@@ -1,0 +1,132 @@
+div.woo_amc_open.right-top{
+	position: unset;
+	background: none;
+	width: auto;
+	height: auto;
+	.woo_amc_open_image{
+		width: auto;
+		height: auto;
+
+	}
+	.woo_amc_open_count{
+		width: 18px;
+		height: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 10px;
+	}
+}
+div.woo_amc_bg.woo_amc_show{
+	z-index: 9;
+}
+.woo_amc_container_wrap{
+	.woo_amc_container{
+		.woo_amc_head{
+			background: #000;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 15px;
+			.woo_amc_head_title {
+				font-size: 18px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #fff;
+			}
+			.woo_amc_close{
+				font-size: 18px;
+				color: #fff;
+				position: unset;
+				padding: 0 20px;
+			}
+		}
+		.woo_amc_center{
+			max-width: 340px;
+		}
+		.woo_amc_footer{
+			.woo_amc_center{
+				flex-direction: column;
+				.woo_amc_flex{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.woo_amc_footer_lines{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0;
+						width: 100%;
+						>*{
+							width: 100%;
+							&.woo_amc_footer_total{
+								text-align: right;
+							}
+						}
+					}
+					.button{
+						width: 48%;
+						border-radius: 0;
+						color: #000;
+						text-align: center;
+					}
+				}
+			}
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.woo_amc_item_wrap{
+			background: #fff;
+			border-width: 0 0 1px 0;
+			padding: 15px 0;
+			margin: 10px 0;
+			.woo_amc_item{
+				display: flex;
+				.woo_amc_item_img{
+					width: 120px;
+				}
+				.woo_amc_item_content{
+					margin-left: 15px;
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					.woo_amc_item_title{
+						width: 100%;
+						a{
+							font-size: 14px;
+							font-weight: bold;
+						}
+					}
+					.woo_amc_item_total_price{
+						position: unset;
+						padding-top: 12px;
+					}
+					.woo_amc_item_quanity_wrap{
+						position: unset;
+						margin: 0;
+						border: 1px solid #ebebeb;
+						font-size: 12px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 5px;
+						height: 30px;
+						input{
+							background: #fff;
+						}
+						.woo_amc_item_quanity_minus, 
+						.woo_amc_item_quanity_plus{
+							width: auto;
+							height: auto;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

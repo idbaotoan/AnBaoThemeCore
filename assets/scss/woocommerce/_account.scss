@@ -1,0 +1,128 @@
+.woocommerce-account{
+	.woocommerce{
+		margin: 50px auto;
+	}
+	.woo-slg-social-container{
+		margin: 30px 0;
+		legend{
+			font-size: 18px;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			white-space: nowrap;
+			&:before{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #fc6702;
+				margin-right: 10px;
+			}
+			&:after{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #fc6702;
+				margin-left: 10px;
+			}
+		}
+	}
+	.woo-slg-social-wrap{
+		display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    &>*{
+	    	width: 32%;
+	    	margin: 0 0 10px 0;
+	    }
+	}
+
+	#customer_login{
+		h2{
+			font-size: 18px;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			white-space: nowrap;
+			&:before{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #fc6702;
+				margin-right: 10px;
+			}
+			&:after{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #fc6702;
+				margin-left: 10px;
+			}
+		}
+		.woocommerce-form{
+			border: 1px solid #1da1f2;
+			margin-top: 20px;
+			input{
+				border: 1px solid #1da1f2;
+			}
+			.form-row{
+				button[type=submit]{
+					background: #1da1f2;
+					color: #fff;
+					font-size: 14px;
+					text-transform: uppercase;
+					&:hover{
+						background: #0077b5;
+					}
+				}
+			}
+		}
+	}
+	.lost_reset_password{
+		padding: 30px;
+		max-width: 60%;
+		margin: 0 auto;
+		border: 2px solid #1da1f2;
+		text-align: center;
+		border-radius: 5px;
+		input{
+			border: 1px solid #1da1f2;
+		}
+		.form-row.woocommerce-form-row{
+			width: 100%;
+			button[type=submit]{
+				background: #1da1f2;
+				color: #fff;
+				font-size: 14px;
+				text-transform: uppercase;
+				&:hover{
+					background: #0077b5;
+				}
+			}
+		}
+	}
+
+	div.woocommerce{
+		.woocommerce-MyAccount-navigation{
+			width: 25%;
+			ul{
+				padding: 0 25px;
+				border-right: 1px solid #1da1f2;
+				li{
+					padding: 8px 0;
+					&.is-active{
+						a{
+							color: #fc6702;
+						}
+					}
+				}
+			}
+		}
+		.woocommerce-MyAccount-content{
+			width: 75%;
+			padding: 0 25px;
+		}
+	}
+}

@@ -1,0 +1,270 @@
+.head-store{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	img{
+		width: 20px;
+		margin-right: 5px;
+	}
+}
+.btn-show-store-infomation{
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.check-store{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	.mash{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		background: #000;
+	}
+	.store-infomation{
+		position: absolute;
+		top: -100%;
+		left: 50%;
+		z-index: 2;
+		transform: translateX(-50%);
+		width: 70%;
+		max-height: 90%;
+		min-height: 50vh;
+		transition: all 450ms;
+		background: #fff;
+		opacity: 1;
+		.close-panel{
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			z-index: 3;
+			color: #fff; 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 70px;
+			height: 35px;
+			border-radius: 5px;
+			background: #00a8ff;
+			cursor: pointer;
+			border: 1px solid transparent;
+			&:hover{
+				border: 1px solid #fc6702;
+			}
+			*{
+				cursor: pointer;
+			}
+			label{
+				display: none;
+			}
+		}
+		.map-7-11{
+			width: 100%;
+			margin: 10px 0;
+			display: flex;
+			align-items:center;
+			justify-content: center;
+			border-bottom: 5px solid #02a64f;
+			height: 50px;
+			img{
+				margin-right: 30px;
+			}
+			ul{
+				padding: 0;
+				margin: 0;
+				li{
+					list-style-type: none;
+					float: left;
+					padding: 8px 40px;
+					background: #02a64f;
+					color: #fff;
+					font-size: 18px;
+					font-weight: bold;
+					border-left: 1px solid #ebebeb;
+					border-right: 1px solid #ebebeb;
+					cursor: pointer;
+					&.active{
+						color: #02a64f;
+						background: #fff;
+					}
+				}
+			}
+		}
+		.store-infomation-inner{
+			display: flex;
+			flex-wrap: wrap;
+			.list-panel{
+				width: 30%;
+				padding: 10px;
+				.select-address{
+					display: block;
+					width: 100%;
+					background: #fff;
+					opacity: 1;
+					select{
+						margin-bottom: 20px;
+						border: 1px solid #ccc;
+						&.un-active{
+							color: #ccc;
+							pointer-events: none;
+						}
+						&.active{
+							color: #0077b5;
+							border: 1px solid #0077b5;
+							pointer-events: auto;
+							cursor: pointer;
+						}
+						&.sub_distric{
+							margin: 0;
+						}
+					}
+
+				}
+				.select-name{
+					display: none;
+					.btn-name{
+						margin: 15px auto;
+						border: none;
+						display: block;
+					}
+				}
+				.select-code{
+					display: none;
+					.btn-code{
+						margin: 15px auto;
+						border: none;
+						display: block;
+					}
+				}
+
+			}
+
+			.show-address{
+				width: 70%;
+				display: flex;
+				margin: 10px 0;
+				background: #ebebeb;
+				overflow-y: auto;
+				padding: 10px;
+				.hello{
+					.welcome{
+						font-size: 18px;
+					}
+					.mess-distric,
+					.mess-sub-distric{
+						display: none;
+					}
+				}
+
+				article{
+					min-width: 50%;
+					width: 100%;
+					.store-item-inner{
+						display: flex;
+						margin-bottom: 20px;
+						img{
+							max-width: 35%;
+						}
+						.summary{
+							padding-left: 20px;
+							h2{
+								font-size: 18px;
+								font-weight: normal;
+								margin-bottom: 5px;
+								margin-top: 0;
+								span{
+									font-weight: bold;
+								}
+							}
+							.full-address{
+								margin-bottom: 5px;
+								span{
+									font-weight: bold;
+								}
+							}
+							.code{
+								span{
+									font-weight: bold;
+								}
+							}
+						}
+					}
+					.map{
+						iframe{
+							width: 100% !important;
+							height: 250px !important;
+						}
+					}
+				}
+			}
+		}
+		
+		.load{
+			display: none;
+			text-align: center;
+			margin-top: 30px;
+			img{
+				max-height: 20px;
+			}
+		}
+		&.loading{
+			.load{
+				display: block;
+			}
+		}
+	}
+	&.active{
+		opacity: 1;
+		visibility: visible;
+		.store-infomation{
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+	&.loaded{
+		.store-infomation{
+			.close-panel{
+				i{
+					display: none;
+				}
+				label{
+					display: block;
+				}
+			}
+		}
+	}
+}
+.extra-fields{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ebebeb;
+	#ab_email_field,
+	#ab_phone_field,
+	#ab_address_field{
+		border: 1px solid #ccc;
+		color: #ccc;
+		pointer-events: none;
+	}
+}
