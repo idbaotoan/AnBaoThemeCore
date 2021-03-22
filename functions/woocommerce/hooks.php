@@ -76,7 +76,11 @@ if(get_theme_mod('ab_quickview','1')){
 if(get_theme_mod('ab_add_to_cart_button','1')){
 	/* Change position cart button */
 	remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart', 10);
-	add_action( 'group_feature', 'woocommerce_template_loop_add_to_cart', 40 );
+	add_action( 'group_feature', 'woocommerce_template_loop_add_to_cart', 5 );
+    add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' ); // 2.1 +
+    function woo_archive_custom_cart_button_text() {
+        return __( 'Mua', 'woocommerce' );
+    } 
 }
 else{
 	remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart', 10);
@@ -90,12 +94,42 @@ if(get_theme_mod('ab_compare','1') || get_theme_mod('ab_quickview','1') || get_t
     <?php
     }
 }
+// Remove open/close link default
+remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+// Add wrap before image
+function ab_wrap_image_open(){ ?>
+    <div class="wrap-image">
+<?php
+}
+function ab_wrap_image_close(){ ?>
+    </div>
+<?php
+}
+add_action('woocommerce_before_shop_loop_item_title','ab_wrap_image_open', 5);
+add_action('woocommerce_before_shop_loop_item_title','ab_wrap_image_close', 15);
+
+add_action('woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_link_open', 7);
+add_action('woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_link_close', 14);
+
+// Add wrap before title
+function ab_wrap_content_open(){ ?>
+    <div class="wrap-content">
+<?php
+}
+function ab_wrap_content_close(){ ?>
+    </div>
+<?php
+}
+add_action('woocommerce_shop_loop_item_title','ab_wrap_content_open', 5);
+add_action('woocommerce_after_shop_loop_item_title','ab_wrap_content_close', 15);
 //Style otions
 if( get_theme_mod('style','product-default') == 'product-default'){
-    add_action('woocommerce_before_shop_loop_item','ab_group_feature', 5);
+    add_action('woocommerce_before_shop_loop_item_title','ab_group_feature', 6);
 }
+
 if( get_theme_mod('style','product-default') == 'product-style-01'){
-    add_action('woocommerce_after_shop_loop_item_title','ab_group_feature', 50);
+    add_action('woocommerce_after_shop_loop_item_title','ab_group_feature', 10);
 }
 if( get_theme_mod('style','product-default') != 'none'){
     if ( ! function_exists( 'ab_products_loop_start' ) ) {

@@ -16,82 +16,152 @@
 	}
 }
 
-/* Quickview*/
-.products{
-	.product{
-		position: relative;
-		.group-feature{
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			z-index: 9;
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			flex-flow: column;
-			opacity: 0;
-			visibility: hidden;
-			transition: all 350ms;
-			&>span{
+
+.product-default{
+	.products{
+		.product{
+			position: relative;
+			.group-feature{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				z-index: 9;
 				display: flex;
 				align-items: center;
-				justify-content: center;
-				width: 35px;
-				height: 35px;
-				border-radius: 50%;
-				background: #fff;
-				color: #fc6702;
-				margin: 5px;
-				cursor: pointer;
-				font-size: 0;
-				box-shadow: 0 0 10px 5px #ebebeb; 
-				i{
-					font-size: 14px;
-				}
-				&:hover{
-					background: #fc6702;
-					color: #fff;
-				}
-				&.loading{
+				justify-content: space-around;
+				flex-flow: column;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 350ms;
+				&>span{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 35px;
+					height: 35px;
+					border-radius: 50%;
+					background: #fff;
+					color: #fc6702;
+					margin: 5px;
+					cursor: pointer;
+					font-size: 0;
+					box-shadow: 0 0 10px 5px #ebebeb; 
 					i{
-						animation: blink 500ms infinite ease-in-out;
+						font-size: 14px;
+					}
+					&:hover{
+						background: #fc6702;
+						color: #fff;
+					}
+					&.loading{
+						i{
+							animation: blink 500ms infinite ease-in-out;
+						}
+					}
+				}
+				a{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 35px;
+					height: 35px;
+					border-radius: 50%;
+					background: #fff;
+					color: #fc6702;
+					margin: 5px;
+					cursor: pointer;
+					font-size: 0;
+					box-shadow: 0 0 10px 5px #ebebeb;
+					&:before{
+						content: "\c072";
+						font-family: "ab-fonts";
+						font-size: 14px;
+					}
+					&.added{
+						display: none;
+					}
+					&.added_to_cart:before{
+						content: "\c071";
+					}
+					&:hover{
+						background: #fc6702;
+						color: #fff;
 					}
 				}
 			}
-			a{
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 35px;
-				height: 35px;
-				border-radius: 50%;
-				background: #fff;
-				color: #fc6702;
-				margin: 5px;
-				cursor: pointer;
-				font-size: 0;
-				box-shadow: 0 0 10px 5px #ebebeb;
-				&:before{
-					content: "\c072";
-					font-family: "ab-fonts";
-					font-size: 14px;
-				}
-				&.added{
-					display: none;
-				}
-				&.added_to_cart:before{
-					content: "\c071";
-				}
-				&:hover{
-					background: #fc6702;
-					color: #fff;
+			&:hover{
+				.group-feature{
+					opacity: 1;
+					visibility: visible;
 				}
 			}
 		}
-		&:hover{
-			.group-feature{
-				opacity: 1;
-				visibility: visible;
+	}
+}
+
+.product-style-01{
+	.products{
+		.product{
+			position: relative;
+			.wrap-content{
+				display: flex;
+				flex-wrap: wrap;
+				.woocommerce-loop-product__title{
+					width: 100%;
+				}
+				.price{
+					width: 50%;
+					margin-bottom: 0;
+				}
+				.group-feature{
+					width: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					a{
+						margin-top: 0;
+						display: flex;
+						align-items: center;
+						&:after{
+							content: "\c072";
+							font-family: "ab-fonts";
+							font-size: 14px;
+							padding-left: 10px;
+						}
+						&.added{
+							display: none;
+						}
+						&.added_to_cart:after{
+							content: "\c071";
+							padding-left: 10px;
+						}
+					}
+					&>span{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 35px;
+						height: 35px;
+						border-radius: 5px;
+						background: #af6900;
+						color: #fff;
+						margin-left: 8px;
+						cursor: pointer;
+						font-size: 0;
+						i{
+							font-size: 14px;
+						}
+						&:hover{
+							background: #fc6702;
+							color: #fff;
+						}
+						&.loading{
+							i{
+								animation: blink 500ms infinite ease-in-out;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -101,6 +171,7 @@
 		display: none;
 	}
 }
+/* Quickview*/
 #ab-quickview-lb{
 	position: fixed;
 	top: 0;
