@@ -16,6 +16,9 @@
         ab_AjaxSearch();
         // Lọc Nội dung
             //ab_AjaxContent();
+            /*$( document ).on( 'elementor/popup/show' , function () { 
+                ab_AjaxSearch();
+            } );*/
         // Ẩn hiện nội dung 
         ab_ToggleSlideDown('.menu-toggle', 'click','.toggle' , '.catalog-menu');
         // Xem nhanh
