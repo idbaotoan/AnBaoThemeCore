@@ -1,37 +1,42 @@
 body{
 	div.product{
-		.entry-summary{
-			.product_title{
-				font-size: 2rem;
-			}
-			.price{
-				font-size: 1.2rem;
-				color: #000;
-				font-weight: bold;
-			}
-			form.cart{
-				.quantity{
-					height: 40px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border: 1px solid #ebebeb;
-					margin-right: 10px;
-					input{
-						border-radius: 0;
-						border: 0;
-						padding: 0;
-					}
-				}
-				button[type=submit]{
-					height: 40px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					background: #000;
-					color: #fff;
+		.product_title{
+			font-size: 2rem;
+		}
+		.price{
+			font-size: 1.2rem;
+			color: #000;
+			font-weight: bold;
+		}
+		form.cart{
+			.quantity{
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid #ebebeb;
+				margin-right: 10px;
+				input{
 					border-radius: 0;
-					padding: 0 30px;
+					border: 0;
+					padding: 0;
+				}
+			}
+			button[type=submit]{
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #000;
+				color: #fff;
+				border-radius: 0;
+				padding: 0 30px;
+				&:not(.loading):after{
+					content: "\c072";
+				    font-family: "ab-fonts";
+				}
+				&:after{
+
 				}
 			}
 		}
@@ -130,10 +135,10 @@ body{
 		.slick-arrow{
 			height: 200px !important;
 			&.jet-slick-prev {
-			    top: -85px !important;
+				top: -85px !important;
 			}
 			&.jet-slick-next {
-			    bottom: -85px !important;
+				bottom: -85px !important;
 			}
 		}
 	}

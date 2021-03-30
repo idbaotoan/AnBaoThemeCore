@@ -164,3 +164,9 @@ if(get_theme_mod('ab_hover_image','1')){
     }
     add_action('after_archive_thumbnail','add_image_hover');
 }
+
+//Thay text add to cart single product
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'ab_cart_button_text' ); // 2.1 +
+function ab_cart_button_text() {
+    return __( 'Mua Ngay', 'woocommerce' );
+}
